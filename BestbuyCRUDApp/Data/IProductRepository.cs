@@ -1,8 +1,12 @@
 ﻿using System;
-namespace BestbuyCRUDApp.Data
+using BestbuyCRUDApp.Models;
+
+namespace BestbuyCRUDApp
 {
-	public interface IProductRepository
-	{
-	}
+
+    public interface IProductRepository
+    {
+        IEnumerable<Product> GetAllProducts();
+    }
 }
 
